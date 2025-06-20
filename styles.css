@@ -125,6 +125,20 @@ section {
   margin: 50rem 1rem;
   box-shadow: 1px 1px 8px var(--color-text);
 }
+.lets-go {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--color-theme);
+  font-weight: bold;
+  font-size: 1rem;
+  color: #eee;
+  transition: background-color 0.15s;
+}
+.lets-go:hover {
+  background-color: var(--color-highlight);
+
+}
 .current-time {
   margin-top: 0;
   padding-left: 7rem;
