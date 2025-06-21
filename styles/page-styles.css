@@ -126,7 +126,7 @@ section {
   box-shadow: 1px 1px 8px var(--color-text);
 }
 .lets-go {
-  padding: 0.25rem 1rem;
+  padding: 0.35rem 5rem;
   border-radius: 1rem;
   border: none;
   background-color: var(--color-theme);
@@ -137,7 +137,6 @@ section {
 }
 .lets-go:hover {
   background-color: var(--color-highlight);
-
 }
 .current-time {
   margin-top: 0;

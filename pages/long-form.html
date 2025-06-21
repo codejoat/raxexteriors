@@ -14,51 +14,55 @@
     <meta name="twitter:title" content="rax-exteriors">
     <meta name="twitter:description" content="Reliable window cleaning, gutter clearing, and pressure washing in Rosemount, MN. Locally owned, community-focused, and ready to make your home shine.">
     <title>RAX Exteriors Forms</title>
-    <link rel="stylesheet" href="../form-styles.css">
+    <link rel="stylesheet" href="../styles/form-styles.css">
   </head>
   <body>
-    <header class="header">
-
-    </header>
+    <header></header>
     <main>
      <form action="YOUR_FORM_HANDLER_URL" method="POST" enctype="multipart form-data">
       <a class="back-to-main" href="../index.html">Back to main page</a>
+      <h1>New Request Form</h1>
       <h2>Contact Details</h2>
-      <label>First Name: <input type="text" name="first_name" required></label><br>
-      <label>Last Name: <input type="text" name="last_name" required></label><br>
-      <label>Company Name: <input type="text" name="company_name"></label><br>
-      <label>Email: <input type="email" name="email" required></label><br>
-      <label><input type="checkbox" name="marketing_consent"> I agree to receive marketing emails and promotions.</label><br>
+      <label><input type="text" name="first_name" placeholder="First name" required></label>
+      <label><input type="text" name="last_name" placeholder="Last name" required></label>
+      <label><input type="text" name="company_name" placeholder="Company name (if applicable)"></label>
+      <label><input type="email" name="email" placeholder="Email" required></label>
+      <label class="consent"><input type="checkbox" name="marketing_consent"> I agree to receive marketing emails and promotions.</label>
+      <p class="note-type">Note: You may unsubscribe at any time.</p>
+      <label><input type="tel" name="phone" placeholder="Phone number" required></label>
+      <label class="consent"><input type="checkbox" name="text_consent"> I agree to receive text messages (SMS) from R.A.X. Exteriors</label>
+      <p class="note-type">Note: You can unsubscribe at anytime by replying STOP. Message and data rates may apply. Message frequency varies.</p><br>
+      
 
       <h2>Address</h2>
-      <label>Street 1: <input type="text" name="street1" required></label><br>
-      <label>Street 2: <input type="text" name="street2"></label><br>
-      <label>City: <input type="text" name="city" required></label><br>
-      <label>State: <input type="text" name="state" required></label><br>
-      <label>ZIP Code: <input type="text" name="zip" required></label><br>
+      <label><input type="text" name="street1" placeholder="Street 1" required></label>
+      <label><input type="text" name="street2" placeholder="Street 2"></label>
+      <label><input type="text" name="city" placeholder="City" required></label>
+      <label><input type="text" name="state" placeholder="State" required></label>
+      <label><input type="text" name="zip" placeholder="ZIP code" required></label><br>
 
       <h2>Services Wanted</h2>
-      <label><input type="checkbox" name="services[]" value="Window Cleaning"> Window Cleaning</label><br>
-      <label><input type="checkbox" name="services[]" value="House Wash"> House Wash</label><br>
-      <label><input type="checkbox" name="services[]" value="Roof Wash"> Roof Wash</label><br>
-      <label><input type="checkbox" name="services[]" value="Driveway Wash"> Driveway Wash</label><br>
-      <label><input type="checkbox" name="services[]" value="Sidewalk Wash"> Sidewalk Wash</label><br>
-      <label><input type="checkbox" name="services[]" value="Gutter Cleaning"> Gutter Cleaning</label><br>
-      <label><input type="checkbox" name="services[]" value="Garbage Bin Cleaning"> Garbage Bin Cleaning</label><br>
-      <label>Other Notes: <textarea name="other_notes"></textarea></label><br>
+      <label><input type="checkbox" name="services[]" value="Window Cleaning"> Window Cleaning<span class="note-type">- Removing dirt and streaks from glass for clear visibility</span></label>
+      <label><input type="checkbox" name="services[]" value="House Wash"> House Wash<span class="note-type">- Washing home exterior, siding, and trim for a fresh, clean look</span></label>
+      <label><input type="checkbox" name="services[]" value="Roof Wash"> Roof Wash<span class="note-type">- Soft washing roofs to remove moss, algae, and builf up grime</span></label>
+      <label><input type="checkbox" name="services[]" value="Driveway Wash"> Driveway Wash<span class="note-type">- Pressure washing driveways to remove stains, dirt, and grime buildup</span></label>
+      <label><input type="checkbox" name="services[]" value="Sidewalk Wash"> Sidewalk Wash<span class="note-type">- Cleaning sidewalks to remove dirt, stains, and enhance curb appeal</span></label>
+      <label><input type="checkbox" name="services[]" value="Gutter Cleaning"> Gutter Cleaning<span class="note-type">- Clearing gutters and downspouts to ensure proper water flow</span></label>
+      <label><input type="checkbox" name="services[]" value="Garbage Bin Cleaning"> Garbage Bin Cleaning<span class="note-type">Washing garbage bins to remove odors, grime, and bacteria</span></label><br>
+      <label>Other Notes:<span class="note-type">(optional)</span><textarea name="other_notes"></textarea></label><br>
 
       <h2>Your Availability</h2>
       <label>Best day for an in-person estimate: <input type="date" name="preferred_day" required></label><br>
       <label>Another day that works: <input type="date" name="alternate_day"></label><br>
-      <label>Preferred Arrival Time:</label><br>
-      <label><input type="radio" name="arrival_time" value="Any time" checked> Any time</label><br>
-      <label><input type="radio" name="arrival_time" value="Morning"> Morning</label><br>
-      <label><input type="radio" name="arrival_time" value="Afternoon"> Afternoon</label><br>
+      <label>Preferred Arrival Time:</label>
+      <label><input type="radio" name="arrival_time" value="Any time" checked> Any time</label>
+      <label><input type="radio" name="arrival_time" value="Morning"> Morning</label>
+      <label><input type="radio" name="arrival_time" value="Afternoon"> Afternoon</label>
       <label><input type="radio" name="arrival_time" value="Evening"> Evening</label><br>
 
-      <h2>Upload Images (Optional)</h2>
-      <label><input type="file" name="images" accept="image/*" multiple></label><br>
-      <p><small>Do not upload files with payment information. Ensure you have all required rights and permissions to share.</small></p>
+      <h2>Upload Images<span class="note-type">(Optional)</span></h2>
+      <label><input type="file" name="images" accept="image/*" multiple></label>
+      <p class="note-type">Note: Do not upload files with payment information. Ensure you have all required rights and permissions to share.</p><br>
 
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>

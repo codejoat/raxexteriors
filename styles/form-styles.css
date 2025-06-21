@@ -36,6 +36,9 @@ body {
   line-height: 1.6;
   padding: var(--space-xs);
 }
+header {
+  margin-bottom: 2rem;
+}
 form {
   max-width: 600px;
   margin: auto;
@@ -43,9 +46,10 @@ form {
   padding: var(--space-l);
   background-color: var(--color-section);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px var(--color-text);
 }
 
+h1,
 h2 {
   margin-top: var(--space-m);
   margin-bottom: var(--space-s);
@@ -61,6 +65,7 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="file"],
+input[type="tel"],
 textarea,
 select {
   width: 100%;
@@ -117,4 +122,18 @@ button[type="reset"]:hover {
 }
 .back-to-main:hover {
   color: var(--color-highlight);
+}
+.consent {
+  margin-bottom: 0;
+}
+.note-type {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--color-theme);
+  margin-left: 1.25rem;
+}
+@media (prefers-color-scheme: light) {
+  .note-type {
+    color: var(--color-highlight);
+  }
 }
